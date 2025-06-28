@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Bonus : meilleure gestion des dimensions */
+}
+
+body {
+  background: linear-gradient(to right, #ffcc00, #996515);
+  min-height: 100vh; /* Étend le dégradé sur toute la hauteur de la page */
+} 

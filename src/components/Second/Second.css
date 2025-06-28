@@ -1,0 +1,445 @@
+/* Second.css */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.second_main {
+  border: 2px solid #8B7355; /* Couleur terre de Massa */
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: #F5F5DC; /* Beige clair */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  color: #6B8E23; /* Vert olive */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.second_input, .select_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #8B7355;
+  border-radius: 8px;
+  background-color: #FFF8E7;
+  color: #5A4A3A;
+  font-size: 16px;
+}
+
+.second_input:focus, .select_input:focus {
+  outline: none;
+  border-color: #6B8E23;
+  box-shadow: 0 0 5px rgba(107, 142, 35, 0.5);
+}
+
+.select_input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238B7355'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 24px;
+}
+
+.submit-btn {
+  background-color: #6B8E23; /* Vert olive */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #556B2F; /* Vert olive plus foncé */
+}
+
+.confirmation-message {
+  border: 2px solid #8B7355;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #F5F5DC;
+  text-align: center;
+}
+
+.confirmation-message h2 {
+  color: #6B8E23;
+  margin-bottom: 15px;
+}
+
+.confirmation-message p {
+  color: #5A4A3A;
+  margin-bottom: 10px;
+}
+
+.confirmation-message button {
+  background-color: #8B7355;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.confirmation-message button:hover {
+  background-color: #6B8E23;
+}
+
+/* ===== MEDIA QUERIES POUR TOUS LES APPAREILS ===== */
+
+/* Très petits écrans (smartphones en mode portrait) */
+@media (max-width: 480px) {
+  .second_main {
+    width: 95%;
+    max-width: 350px;
+    top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .form-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .second_input, .select_input {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .confirmation-message {
+    width: 95%;
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 18px;
+  }
+
+  .confirmation-message p {
+    font-size: 14px;
+  }
+
+  .confirmation-message button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Petits écrans (smartphones en mode paysage) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .second_main {
+    width: 92%;
+    max-width: 450px;
+    top: 30px;
+    padding: 18px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .second_input, .select_input {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    padding: 11px 18px;
+    font-size: 15px;
+  }
+
+  .confirmation-message {
+    width: 92%;
+    max-width: 450px;
+    padding: 25px;
+  }
+}
+
+/* Tablettes (portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .second_main {
+    width: 85%;
+    max-width: 600px;
+    top: 60px;
+    padding: 25px;
+    border-radius: 18px;
+  }
+
+  .form-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .second_input, .select_input {
+    padding: 14px;
+    margin-bottom: 18px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+  .submit-btn {
+    padding: 14px 25px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+  .confirmation-message {
+    width: 85%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px;
+    border-radius: 18px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 24px;
+  }
+
+  .confirmation-message p {
+    font-size: 16px;
+  }
+}
+
+/* Tablettes (paysage) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .second_main {
+    width: 80%;
+    max-width: 700px;
+    top: 70px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .form-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .second_input, .select_input {
+    padding: 16px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .submit-btn {
+    padding: 16px 30px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .confirmation-message {
+    width: 80%;
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 26px;
+  }
+
+  .confirmation-message p {
+    font-size: 17px;
+  }
+}
+
+/* Écrans de bureau (desktop) */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .second_main {
+    width: 75%;
+    max-width: 800px;
+    top: 80px;
+    padding: 35px;
+    border-radius: 22px;
+  }
+
+  .form-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .second_input, .select_input {
+    padding: 18px;
+    margin-bottom: 22px;
+    font-size: 19px;
+    border-radius: 14px;
+  }
+
+  .submit-btn {
+    padding: 18px 35px;
+    font-size: 19px;
+    border-radius: 14px;
+  }
+
+  .confirmation-message {
+    width: 75%;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 45px;
+    border-radius: 22px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 28px;
+  }
+
+  .confirmation-message p {
+    font-size: 18px;
+  }
+}
+
+/* Très grands écrans (4K et plus) */
+@media (min-width: 1920px) {
+  .second_main {
+    width: 70%;
+    max-width: 900px;
+    top: 100px;
+    padding: 40px;
+    border-radius: 25px;
+  }
+
+  .form-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .second_input, .select_input {
+    padding: 20px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    border-radius: 16px;
+  }
+
+  .submit-btn {
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 16px;
+  }
+
+  .confirmation-message {
+    width: 70%;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 25px;
+  }
+
+  .confirmation-message h2 {
+    font-size: 30px;
+  }
+
+  .confirmation-message p {
+    font-size: 19px;
+  }
+}
+
+/* Orientation paysage pour les petits écrans */
+@media (max-height: 500px) and (orientation: landscape) {
+  .second_main {
+    top: 10px;
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .second_input, .select_input {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .confirmation-message {
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
+
+/* Mode sombre (si supporté) */
+@media (prefers-color-scheme: dark) {
+  .second_main {
+    background-color: #2a2a2a;
+    border-color: #6B8E23;
+    color: #ffffff;
+  }
+
+  .second_input, .select_input {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #6B8E23;
+  }
+
+  .second_input::placeholder {
+    color: #cccccc;
+  }
+
+  .confirmation-message {
+    background-color: #2a2a2a;
+    border-color: #6B8E23;
+    color: #ffffff;
+  }
+
+  .confirmation-message p {
+    color: #cccccc;
+  }
+}
+
+/* Réduction de mouvement pour l'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .submit-btn,
+  .second_input,
+  .select_input {
+    transition: none;
+  }
+}
+
+/* Haute densité de pixels (retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .select_input {
+    background-size: 20px;
+  }
+}
